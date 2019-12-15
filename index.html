@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework_03</title>
+    </head>
+    <body>
+        <script>
+            var num = prompt('Введи число');
+            num = parseInt(num, 10);
+            console.log(num);
+            var a = '';
+            var b = '';
+            var i = 0;
+            if (num > 0) {
+                while (i < num) {
+                    a = a + '*';
+                    b = b + a + '\n';
+                    i++;
+                }
+                alert(b);
+            } else {
+                alert('Fuck you');
+            }
+        </script>
+    </body>
+</html>
