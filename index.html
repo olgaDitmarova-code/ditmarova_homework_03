@@ -9,14 +9,14 @@
             var num = prompt('Введи число');
             num = parseInt(num, 10);
             console.log(num);
-            var a = '';
+            var a = '*';
             var b = '';
             var i = 0;
             if (num > 0) {
                 while (i < num) {
-                    a = a + '*';
-                    b = b + a + '\n';
                     i++;
+                    b = b + ' '.repeat(num - i) + a + '\n';
+                    a = a + '**';
                 }
                 alert(b);
             } else {
